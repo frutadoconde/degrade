@@ -1,0 +1,13 @@
+{
+  "addons": {
+    "{lectio@frutadoconde.com}": {
+      "updates": [
+        {
+          "version": "1.0",
+          "update_link": "https://github.com/frutadoconde/degrade/releases/download/1.0/degrade-1.0.zip",
+          "update_hash": "sha256:d139261cf5ca3dc3933fed58b1c5a4685a246855d53544de6bbcb98fdd384f8a"
+        }
+      ]
+    }
+  }
+}

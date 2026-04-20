@@ -18,6 +18,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "degrade@frutadoconde.com",
+      "update_url": "https://github.com/frutadoconde/degrade/blob/main/updates.json",
       "data_collection_permissions": {
         "required": ["none"]
       }
