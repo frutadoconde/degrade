@@ -1,0 +1,94 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+hr {
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: hsl(0, 0%, 13%);
+  background-color: hsl(47, 100%, 98%);
+  width: fit-content;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-family: "Roboto Serif", serif;
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+  background: linear-gradient(-90deg, hsl(0, 69.59%, 42.55%), hsl(217, 29%, 37%));
+  -webkit-background-clip: text;
+  transition: text-shadow 0.15s;
+  -webkit-text-fill-color: transparent;
+}
+
+h1:hover {
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+#applyGradient {
+  background: linear-gradient(50deg, hsl(0, 69.59%, 42.55%), hsl(217, 29%, 37%));
+}
+
+#modeChange {
+  background: linear-gradient(40deg, hsl(34, 31%, 54%), hsl(217, 29%, 37%));
+}
+
+#clear {
+  width: 100%;
+}
+
+button {
+  background-color: hsl(0, 0%, 13%);
+  border-radius: 4px;
+  border-style: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  color: hsl(47, 100%, 98%);
+  flex-grow: 1;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 0 0.3rem 0;
+}
+button:hover {
+  filter: brightness(0.6);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0.2rem);
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.material-icons.md-light {
+  color: rgb(255, 255, 255);
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
