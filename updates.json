@@ -6,6 +6,11 @@
           "version": "1.0",
           "update_link": "https://github.com/frutadoconde/degrade/releases/download/1.0/degrade-1.0.zip",
           "update_hash": "sha256:8d2c29d20e8536402fb61304d609315fc8ea135247701a93870c45cbd9d32bd7"
+        },
+        {
+          "version": "2.0",
+          "update_link": "https://github.com/frutadoconde/degrade/releases/download/2.0/degrade-2.0.zip",
+          "update_hash": "sha256:db8058e000055cf07b28435fc4232e79efb794d278f048f5c871b5c15a8b5a29"
         }
       ]
     }

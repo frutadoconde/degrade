@@ -1,3 +1,5 @@
+let isLightMode = true;
+
 $(function () {
     $("#applyGradient").on("click", applyEvent);
     $("#clear").on("click", resetEvent);
@@ -29,23 +31,11 @@ async function applyEvent() {
 }
 
 async function modeEvent() {
-    const getMode = await browser.storage.local.get("lightMode");
-    let storedMode = getMode.lightMode;
-
-    if (Object.keys(getMode).length === 0) {
-        storedMode = true;
-    } else {
-        storedMode = !storedMode;
-    }
-
-    await browser.storage.local.set({ lightMode: storedMode });
-    const mode = storedMode ? "light" : "dark";
-
+    isLightMode = !isLightMode;
+    const mode = isLightMode ? "light" : "dark";
     sendMessage({ action: "changeMode", mode });
 }
 
 async function resetEvent() {
-    await browser.storage.local.remove("lightMode");
-
     sendMessage({ action: "resetStyle" });
 }

@@ -2,8 +2,8 @@
   "manifest_version": 2,
   "name": "Degrade",
   "author": "frutadoconde",
-  "version": "1.0",
-  "description": "Basic reading accessibility toggle",
+  "version": "2.0",
+  "description": "Experimental implementation of dynamic cross-line gradients for text blocks as a reading aid",
   "icons": {
     "48": "icons/icon.svg",
     "96": "icons/icon.svg"
@@ -30,12 +30,10 @@
     "activeTab",
     "storage"
   ],
-
   "content_scripts": [
     {
       "matches":  ["https://*/*"],
-      "js": ["jquery-4.0.0.slim.min.js", "content.js"]
+      "js": ["jquery-4.0.0.slim.min.js", "gsap.min.js", "SplitText.min.js", "content.js"]
     }
   ]
-
 }
